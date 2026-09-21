@@ -110,8 +110,7 @@ footer{
 'La verdad es que me flipa la programación. Me flipa pasar horas picando código, resolviendo problemas y viendo cómo una idea de mi cabeza se convierte en un proyecto real y funcional.<br>' .
      'Si le preguntan a mi profe ' . $profe . ', seguro les diría que soy el ' . $adjetivo . '. Siempre me tomo el aprendizaje en serio y le pongo muchas ganas a todo lo que hago.<br>' .
      'Cuando no estoy entre pantallas y código, me gusta dedicar mi tiempo libre a jugar a ' . $hobbie . '. Desconectar con estas aficiones me ayuda a despejar la mente y a volver con más creatividad y foco.<br>' .
-     'Me encantaría tener la oportunidad de charlar un rato, conocernos mejor y contarles cómo puedo aportar mi energía al equipo. </p>';
-     
+
             ?>
 
         </div>
