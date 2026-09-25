@@ -1,0 +1,55 @@
+.caja {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .caja h3 {
+            margin-top: 0;
+        }
+
+
+.parell{
+    background-color: silver;
+}
+.senar{
+    background-color: red;
+}
+.color1{
+    background-color: darkcyan;
+}
+.color2{
+    background-color: firebrick;
+}
+
+.color3{
+    background-color: rgb(39, 39, 201);
+}
+.color4{
+    background-color: khaki;
+}
+
+.color5{
+    background-color: royalblue
+}
+.color6{
+    background-color: violet;
+}
+.color7{
+    background-color: burlywood
+}
+.color8{
+    background-color: blueviolet;
+}
+.color9{
+    background-color: brown;
+}
+.color10{
+    background-color: cyan;
+}
+.color11{
+    background-color: seagreen;
+}
