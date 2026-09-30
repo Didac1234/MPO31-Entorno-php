@@ -11,7 +11,7 @@ $chivato  = 0;
 <?php for ($i = 1; $i <= 100; $i++): ?>
         <?php if($numAl % $i == 0):?>
             <div class =""> <?= $i?> </div>
-            <?php $chivato = $chivato  +1; ?>
+            <?php $chivato = $chivato  + 1; ?>
         <?php endif; ?> 
 
 
