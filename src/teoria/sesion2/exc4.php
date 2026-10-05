@@ -19,7 +19,7 @@ $chivato  = 0;
 
     <?php if($chivato >= 2):?>
          <div class =""> Es primo </div>
-         <?php else; ?> 
+         <?php else: ?> 
          <div>No es primo </div>
          <?php endif;?>
 
