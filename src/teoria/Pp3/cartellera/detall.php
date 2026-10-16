@@ -40,7 +40,7 @@ include 'head.php';
         <?php } ?>
 
         <?php if ($id == 10) { ?>
-            <div id="carrusel" class="bloque" data-bs-ride="carousel">
+            <div id="carrusel" class="bloque" >
                 
                 <button class="anterior" type="button" >
                     <span class="icono"></span>
