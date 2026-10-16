@@ -42,10 +42,10 @@ include 'head.php';
         <?php if ($id == 10) { ?>
             <div id="carrusel" class="bloque" data-bs-ride="carousel">
                 
-                <button class="anterior" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <button class="anterior" type="button" >
                     <span class="icono"></span>
                 </button>
-                <button class="siguiente" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                <button class="siguiente" type="button" >
                     <span class="icono"></span>
                 </button>
             </div>
