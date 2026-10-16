@@ -2,7 +2,7 @@
 include 'pelicules.php';
 $id = $_GET['id'];
 $peli = $pelis[$id];
-$url = $peli['trailer'] . '?autoplay=1&mute=1';
+$url = $peli['trailer'] ;
 include 'head.php';
 ?>
 
