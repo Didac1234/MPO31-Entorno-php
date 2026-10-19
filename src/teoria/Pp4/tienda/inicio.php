@@ -1,107 +1,150 @@
-<?php
-
-
-
-
-
-
-
-?>
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Datos</title>
 </head>
+
 <style>
- 
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* ==========================================================================
+   RESET & CONFIGURACIÓN BASE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f3;
+    background-image: 
+        radial-gradient(at 20% 20%, rgba(0, 160, 73, 0.08) 0px, transparent 40%),
+        radial-gradient(at 80% 80%, rgba(0, 82, 37, 0.08) 0px, transparent 40%);
+    background-attachment: fixed;
+    color: #0f1e16;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
+    padding: 20px;
 }
 
-
+/* ==========================================================================
+   TÍTULO
+   ========================================================================== */
 h1 {
-    color: #333333;
-    margin-bottom: 20px;
+    color: #0f1e16;
+    margin-bottom: 24px;
     font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: center;
 }
 
-
+/* ==========================================================================
+   TARJETA DEL FORMULARIO
+   ========================================================================== */
 form {
     background-color: #ffffff;
-    padding: 30px 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 36px 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 102, 46, 0.08);
+    border: 1px solid #e1e9e4;
     width: 100%;
-    max-width: 350px;
-    box-sizing: border-box;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(0, 102, 46, 0.12);
+}
 
+/* ==========================================================================
+   INPUTS / CAMPOS DE TEXTO
+   ========================================================================== */
 form input[type="text"],
 form input[type="number"],
 form input[type="url"] {
     width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #cccccc;
-    border-radius: 6px;
+    padding: 14px 16px;
+    border: 1.5px solid #d4dfd8;
+    border-radius: 12px;
     font-size: 0.95rem;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+    color: #0f1e16;
+    background-color: #fafcfb;
     outline: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+form input::placeholder {
+    color: #8fa195;
+    font-size: 0.9rem;
+}
 
+/* Efecto al hacer clic en un input */
 form input[type="text"]:focus,
 form input[type="number"]:focus,
 form input[type="url"]:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    border-color: #00a049;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(0, 160, 73, 0.15);
 }
 
-
+/* ==========================================================================
+   BOTÓN SUBMIT
+   ========================================================================== */
 form button[type="submit"] {
-    background-color: #007bff;
+    background: linear-gradient(135deg, #009946 0%, #00662e 100%);
     color: #ffffff;
-    padding: 12px;
+    padding: 14px;
     border: none;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 0.02em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
+    transition: all 0.25s ease;
+    margin-top: 8px;
+    box-shadow: 0 4px 12px rgba(0, 102, 46, 0.2);
 }
-
 
 form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background: linear-gradient(135deg, #00b352 0%, #007a37 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 102, 46, 0.3);
+}
+
+form button[type="submit"]:active {
+    transform: translateY(0);
 }
 </style>
 <body>
 
-    <h1> Formulario </h1>
+   
 
-    <form action="index.php" method="post">
-    <input type="text" name="Nombre">
-    <input type="number" name="Telefono">
-    <input type="url" name="UrlImg">
+    <main class="form-container">
+        <h1 class="form-title">Ingresar Datos</h1>
 
-    <button type="submit">Submit</button>
-</form>
+        <form action="index.php" method="post">
+            <input type="text" name="Nombre" placeholder="Nombre completo" required>
+            <input type="number" name="Telefono" placeholder="Número de teléfono" required>
+            <input type="url" name="UrlImg" placeholder="URL de la imagen de perfil" required>
+
+            <button type="submit">Guardar Datos</button>
+        </form>
+    </main>
+
     
+
 </body>
 </html>

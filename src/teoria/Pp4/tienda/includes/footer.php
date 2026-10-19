@@ -7,7 +7,7 @@
 </head>
 <style>
     footer {
-    background: linear-gradient(135deg, #4a90e2, #357abd);
+    background: linear-gradient(135deg, green, green);
     color: #ffffff;
     padding: 20px 40px;
     text-align: center;
