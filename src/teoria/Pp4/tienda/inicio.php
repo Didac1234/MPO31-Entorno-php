@@ -9,9 +9,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-/* ==========================================================================
-   RESET & CONFIGURACIÓN BASE
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -34,9 +32,7 @@ body {
     padding: 20px;
 }
 
-/* ==========================================================================
-   TÍTULO
-   ========================================================================== */
+
 h1 {
     color: #0f1e16;
     margin-bottom: 24px;
@@ -46,9 +42,7 @@ h1 {
     text-align: center;
 }
 
-/* ==========================================================================
-   TARJETA DEL FORMULARIO
-   ========================================================================== */
+
 form {
     background-color: #ffffff;
     padding: 36px 30px;
@@ -68,9 +62,7 @@ form:hover {
     box-shadow: 0 16px 40px rgba(0, 102, 46, 0.12);
 }
 
-/* ==========================================================================
-   INPUTS / CAMPOS DE TEXTO
-   ========================================================================== */
+
 form input[type="text"],
 form input[type="number"],
 form input[type="url"] {
@@ -91,7 +83,7 @@ form input::placeholder {
     font-size: 0.9rem;
 }
 
-/* Efecto al hacer clic en un input */
+
 form input[type="text"]:focus,
 form input[type="number"]:focus,
 form input[type="url"]:focus {
@@ -100,9 +92,7 @@ form input[type="url"]:focus {
     box-shadow: 0 0 0 4px rgba(0, 160, 73, 0.15);
 }
 
-/* ==========================================================================
-   BOTÓN SUBMIT
-   ========================================================================== */
+
 form button[type="submit"] {
     background: linear-gradient(135deg, #009946 0%, #00662e 100%);
     color: #ffffff;
