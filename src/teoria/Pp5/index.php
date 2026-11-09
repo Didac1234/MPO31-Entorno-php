@@ -8,7 +8,7 @@
 </head>
 <body class="text-center">
     <div class="container mt-5">
-        <h1>Bienvenido a la Biblioteca Virtual 📚</h1>
+        <h1>Bienvenido a la Biblioteca Virtual </h1>
         <p>Aquí encontrarás todos nuestros libros.</p>
         <a href="login.php" class="btn btn-primary">Ir al login</a>
     </div>
