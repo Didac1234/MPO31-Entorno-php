@@ -1,0 +1,1 @@
+<footer class="peu">ESTE ES EL FOOTER</footer>
